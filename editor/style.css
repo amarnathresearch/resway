@@ -1,0 +1,63 @@
+ /* Updated CSS */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+.editor-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.editor-content {
+    flex: 1;
+}
+.clickable-icon {
+    cursor: pointer;
+    border: 1px;
+}
+.cellIdSpan{
+    font-size: small;
+    padding-left: 20px;
+}
+/* .output-console {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    white-space: pre-wrap;
+} */
+.output-console{
+    max-height: 300px;
+}
+
+/* Prevent CodeMirror from displaying vertical scrollbar */
+.CodeMirror {
+    height: 100%;
+}
+
+/* Added CSS for buttons and dropdown */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.button-container button,
+.button-container select {
+    margin-right: 10px;
+}
+.gap{
+    height: 5px;
+    width: 100%;
+    font-size: x-small;
+}
+.btn-light{
+    border-color: rgb(231, 231, 231);
+}
