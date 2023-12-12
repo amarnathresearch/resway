@@ -199,12 +199,16 @@ h6 {
   color: #012970;
   font-family: "Nunito", sans-serif;
 }
-
-@media (max-width: 412px){
+@media (max-width: 570px){
   .logo span{
     font-size: 20px;
   }
-}
+} 
+/* @media (max-width: 412px){
+  .logo span{
+    font-size: 20px;
+  }
+} */
 
 .header {
   transition: all 0.5s;
@@ -297,7 +301,8 @@ h6 {
 }
 
 .header-nav>ul {
-  padding: 0;
+  /* padding: 0; */
+  padding: 10px;
   /* width: 100px; */
   height: 50px;
   margin-bottom: 0%;
