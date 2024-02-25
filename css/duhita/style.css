@@ -30,8 +30,8 @@
 # Main
 --------------------------------------------------------------*/
 #main {
-    /* margin-top: 50px; */
-    /* padding: 20px 60px; */
+    margin-top: 50px;
+    padding: 20px 60px;
     transition: all 0.3s;
   }
   
@@ -261,11 +261,17 @@
     }
   }
   
+  /* new sidebar*/
 
+  .self-sidebar{
+    /* overflow: visible; */
+    overflow: auto
+  }
+  
   /* sidebar */
-  .sidebar {
+  /* .sidebar {
     position: fixed;
-    top: 0px;
+    top: 60px;
     left: 0;
     bottom: 0;
     width: 60px;
@@ -410,15 +416,8 @@
   .text-bg-primary {
     background-color: #DCE2F0 !important;
     color:#50586C !important;
-  }
-  .sidebar-nav .nav-content a:hover,
-  .sidebar-nav .nav-content a.active {
-  
-  }
-  
-  .sidebar-nav .nav-content a.active i {
-    
-  }
+  } 
+ 
   
   .items{
     width: 100%;
@@ -431,13 +430,13 @@
   }
   .item-wrap {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center; 
   }
   .item-title{
     color: #DCE2F0;
     font-size: 12px;
-  }
+  }*/
 
 
   
@@ -555,8 +554,8 @@ hr{
 .right-wrap{
 
     display: flex;
-    /* margin-top: 10px;
-    flex-wrap: wrap; */
+    margin-top: 10px;
+    flex-wrap: wrap;
 
 }
 
@@ -603,6 +602,8 @@ align-items: center;
 /* course topic */
 
 .course-title{
+       
+    /* margin:  10px 0 13px 0; */
     height: 44px;
 }
 .topic-section{
@@ -615,6 +616,7 @@ align-items: center;
   display: flex;
   flex-direction: column;
 
+  /* min-width: 1200px; */
   margin: 0px 10px;
 }
 .topic-title{
@@ -643,16 +645,16 @@ align-items: center;
 .color-1{
   background-color: #DCE2F0;
  
-  border-top-left-radius: 5px; 
-  border-bottom-left-radius: 5px; 
+  border-top-left-radius: 5px; /* 左上角的圆角半径 */
+  border-bottom-left-radius: 5px; /* 左下角的圆角半径 */
   padding: 7px; 
   color: #50586C;
 }
 .color-2{
   background-color: #50586C;
 
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px; 
+  border-top-left-radius: 5px; /* 左上角的圆角半径 */
+  border-bottom-left-radius: 5px; /* 左下角的圆角半径 */
   padding: 7px; 
   color: #DCE2F0;
 }
@@ -687,6 +689,7 @@ margin: 0 0 0 20px;
   .footer .copyright {
     text-align: center;
     color: #012970;
+    overflow: auto;
   }
   
   .footer .credits {
@@ -694,6 +697,7 @@ margin: 0 0 0 20px;
     text-align: center;
     font-size: 13px;
     color: #012970;
+    overflow: auto;
   }
 
   /* instruction */
