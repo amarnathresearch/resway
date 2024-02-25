@@ -30,8 +30,8 @@
 # Main
 --------------------------------------------------------------*/
 #main {
-    margin-top: 50px;
-    padding: 20px 60px;
+    /* margin-top: 50px; */
+    /* padding: 20px 60px; */
     transition: all 0.3s;
   }
   
@@ -265,7 +265,7 @@
   /* sidebar */
   .sidebar {
     position: fixed;
-    top: 1px;
+    top: 0px;
     left: 0;
     bottom: 0;
     width: 60px;
@@ -555,8 +555,8 @@ hr{
 .right-wrap{
 
     display: flex;
-    margin-top: 10px;
-    flex-wrap: wrap;
+    /* margin-top: 10px;
+    flex-wrap: wrap; */
 
 }
 
