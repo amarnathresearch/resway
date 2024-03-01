@@ -1,0 +1,89 @@
+/*****************************************************/
+    /* Context menu styles */
+    .context-menu {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 8px 0;
+        min-width: 120px;
+        z-index: 1000;
+    }
+
+    /* Context menu item styles */
+    .context-menu-item {
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+
+    /* Show context menu on right-click */
+    .show-context-menu {
+        display: block;
+    }
+
+    /* Highlight the .highlighted class */
+    .highlighted {
+        background-color: #f0f0f0; /* Change to your desired highlight color */
+    }
+
+    /* Style for the rename input field */
+    .rename-input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    /* Style for tree items */
+    .tree-item {
+        margin-left: 0px;
+        padding: 2px; /* Adjusted padding for better alignment */
+        position: relative; /* Add relative positioning */
+    }
+
+    /* Folder icon */
+    .folder-icon::before {
+        content: '\f107'; /* Unicode for down arrow icon () */
+        font-family: "FontAwesome"; /* Use FontAwesome for icons */
+        color: #333; /* Folder icon color */
+        margin-right: 3px;
+        position: absolute; /* Position the icon */
+        left: -20px; /* Adjust the icon's left position */
+    }
+
+    .selected {
+        background-color: #f0f0f0; /* Change to your desired highlight color */
+    }
+
+    /* File icon */
+    .file-icon::before {
+        content: '\f15b'; /* Unicode for file icon () */
+        font-family: "FontAwesome"; /* Use FontAwesome for icons */
+        color: #333; /* File icon color */
+        margin-right: 3px;
+        position: absolute; /* Position the icon */
+        left: -20px; /* Adjust the icon's left position */
+    }
+
+    ul.list-group {
+        padding-left: 0; /* Remove default padding-left */
+    }
+
+    li.list-group-item {
+        border: none !important;
+        padding: 3px; /* Adjusted padding for uniform spacing */
+        margin: 0; /* Remove margin to ensure consistent spacing */
+    }
+
+    ul.list-group .list-group-item {
+        padding-left: 10px; /* Add padding to align children with parents */
+    }
+
+    ul {
+        list-style: none; /* Remove bullet points for list items */
+        padding-left: 0;
+    }
+    .editing {
+        background-color: #b7b285; /* Change to your desired highlight color */
+    }
+    /*****************************************************/

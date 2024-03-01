@@ -1,0 +1,27 @@
+
+/* Custom CSS for draggable buttons */
+.draggable-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* height: auto; */
+}
+
+.draggable-button {
+    cursor: move;
+    display: inline-block;
+    padding: 2px 5px; /* Adjust padding as needed */
+    margin-right: 0; /* Remove margin between buttons */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 15px; /* Adjust font size as needed */
+}
+
+.close-button {
+    cursor: pointer;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: red;
+}
