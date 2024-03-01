@@ -6,7 +6,7 @@
   }
   body {
     font-family: "Open Sans", sans-serif;
-    background-color: #DCE2F0;  
+    background-color: #fff;
   }
   
   a {
@@ -264,9 +264,10 @@
   /* new sidebar*/
 
   .self-sidebar{
-    /* overflow: visible; */
     overflow: auto
   }
+
+
   
   /* sidebar */
   /* .sidebar {
@@ -468,8 +469,9 @@
 }
 @media (max-width: 1200px){
     #main, #footer {
-    margin-left: 40px;
-    padding: 20px 30px;
+    /* margin-left: 40px; */
+    /* padding: 20px 30px; */
+    padding: 20px 1px;
     }
 }
 .left-d{
@@ -599,6 +601,30 @@ align-items: center;
     padding: 10px 20px;
 }
 
+
+
+/* new topic*/
+.topic-title{
+  margin: 10px 0;
+
+}
+.list-group a{
+  background-color:var(--bs-tertiary-bg);
+  /* background-color: #DCE2F0; */
+  /* color: #50586C; */
+}
+.list-group a:hover{
+  color: #50586C;
+}
+
+.topic-time{
+  margin: 0 10px;
+
+}
+.list-group-item p{
+  margin-top: 15px;
+}
+
 /* course topic */
 
 .course-title{
@@ -619,9 +645,9 @@ align-items: center;
   /* min-width: 1200px; */
   margin: 0px 10px;
 }
-.topic-title{
+/* .topic-title{
   width: 100%;
-}
+} */
 
 
 .topic-item{
@@ -671,10 +697,7 @@ margin: 0 0 0 20px;
 .topic-desc{
   padding-left: 10px;
 }
-.topic-time{
-  font-size: small;
 
-}
 
 /*--------------------------------------------------------------
 # Footer
