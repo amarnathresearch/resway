@@ -17,11 +17,6 @@
     flex-wrap: nowrap;
 
 }
-.right-row{
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-}
 .folder-editor{
   
    overflow-x:scroll;
