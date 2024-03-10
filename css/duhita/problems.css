@@ -13,9 +13,13 @@
     display: flex;
     height: 100%;
     width: auto;
+    min-width: 170px;
     margin-right: 20px;
     /* overflow-y: auto ; */
 }
+/* #folderStructure{
+    max-width: 15%;
+} */
 /* .row{
     flex-wrap: nowrap;
 
