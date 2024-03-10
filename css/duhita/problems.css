@@ -19,12 +19,13 @@
 }
 
 .folder-editor{
-    width: 85%;
+    /* width: 85%; */
+    width: 100%;
     overflow-y: auto;
     /* overflow-x: hidden; */
 }
 .project-editor{
-    max-width: 1069px;
+    /* max-width: 1069px; */
     overflow-x: auto;
 }
 
