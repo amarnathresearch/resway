@@ -187,6 +187,7 @@
 }
 
 .main-view .divider {
+  display: flex;
   cursor: col-resize; 
   user-select: none;
   width: 3px;
@@ -197,6 +198,10 @@
   align-items: center;
   z-index: 2;
 }
+.main-view .divider:hover{
+  background-color: blue;
+}
+
 
 .float-div{
   float: left;
