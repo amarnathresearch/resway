@@ -18,6 +18,13 @@
 
 }
 .folder-editor{
-  
-   overflow-x:scroll;
+    width: 100%;
+ 
+}
+.editor-menu{
+    width: 85%;
+    border: 1px solid #121212;
+}
+.draggable-menu {
+    width: 85%;;
 }
