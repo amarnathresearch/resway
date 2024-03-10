@@ -17,13 +17,16 @@
     margin-right: 20px;
     /* overflow-y: auto ; */
 }
-/* #folderStructure{
-    max-width: 15%;
-} */
-/* .row{
-    flex-wrap: nowrap;
+.divider {
+    width: 100px;
+    height: 100%;
+    background-color: gray;
+}
+.divider:hover {
+    background-color: blue;
+    cursor: pointer; /* 可选：更改鼠标指针为手型 */
+}
 
-} */
 .folder-editor{
     width: 85%;
     /* overflow-x: hidden; */
