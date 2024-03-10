@@ -1,4 +1,23 @@
 .pro-menu{
     height: 100%;
-    width:100px;
+    width:40px;
+}
+.regular-problem{
+    height: 100%;
+    min-width:  180px;
+    --bs-list-group-border-width: unset;
+    border-radius:unset;
+    border-left: 1px solid #dee2e6;
+}
+.folder-menu{
+    height: 100%;
+    width: auto;
+}
+.row{
+    flex-wrap: nowrap;
+
+}
+.folder-editor{
+  
+   overflow-x:scroll;
 }
