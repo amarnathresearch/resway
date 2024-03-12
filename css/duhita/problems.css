@@ -25,10 +25,10 @@
     /* width: 85%; */
     width: 100%;
     overflow-y: auto;
-    /* overflow-x: hidden; */
+   
 }
 .project-editor{
-    /* max-width: 1069px; */
+    
     overflow-x: auto;
 }
 
@@ -47,12 +47,20 @@
 .list-group-item.active {
     background-color: #4070AA;
 }
+/* .header-wrapper .logo-strong{
+    font-size: larger;
+    color: #D6E342;
+} */
 
-.open-icon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ /* 自定义动画效果 */
+ @keyframes progressAnimation {
+    0% { width: 0%; }
+    100% { width: 70%; } /* 这里设置进度条的最终宽度 */
 }
-.bi-arrow-bar-right{
-    display: none;
+
+/* 进度条样式 */
+.progress-bar {
+    background-color: #198038;
+    
+    animation: progressAnimation 2s linear forwards; /* 持续时间为 2 秒，线性动画 */
 }

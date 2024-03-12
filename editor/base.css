@@ -8,12 +8,18 @@
     left: 0;
     right: 0;
     width: 100%;
+
+  }
+
+.header .gradient-header{
+  background-image: linear-gradient(to right, #085438,#B9CD74 ,  #757430 ,#2A6078);
+  mix-blend-mode: overlay; /* 混合模式  #D1DDDB #85B8CB  #283B42 */
 }
-.header-wrapper .d-none {
-    font-size: 26px;
-    font-weight: 700;
+.header-wrapper .logo {
+    font-size: 30px;
+    /* font-weight: 700;
     color: #fff;
-    font-family: "Nunito", sans-serif;
+    font-family: "Nunito", sans-serif; */
 }
 
 .header .header-wrapper .left {
@@ -48,9 +54,12 @@
 }
 
 .progressbar-wrapper .progress {
-  height: 4px;
+  height: 5px;
   flex: 2; 
-  background-color: #fff;
+  background-color: #D91E31;
+  border: 1px solid #fffcfc; 
+  box-shadow: 0 0 3px #fffcfc; /* 添加阴影效果 */
+        border-radius: 5px; /* 添加圆角边框 */
 }
 .header .header-wrapper .center {
     position: absolute;
@@ -65,7 +74,7 @@
 }
 
 .header .header-wrapper .center .timer {
-    background-color: #123664;
+    /* background-color: #123664; */
     padding: 8px 16px;
     font-weight: 700;
     font-size: 24px;
