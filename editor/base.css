@@ -13,10 +13,12 @@
 
 .header .gradient-header{
   background-image: linear-gradient(to right, #085438,#B9CD74 ,  #757430 ,#2A6078);
-  mix-blend-mode: overlay; /* 混合模式  #D1DDDB #85B8CB  #283B42 */
+  mix-blend-mode: overlay; /* 混合模式 #085438  #D1DDDB #85B8CB  #283B42 */
 }
-.header-wrapper .logo {
+.logo-img {
     font-size: 30px;
+    height: 52px;
+     width:80px;
     /* font-weight: 700;
     color: #fff;
     font-family: "Nunito", sans-serif; */

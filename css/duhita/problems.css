@@ -1,16 +1,17 @@
 .pro-menu{
     height: 100%;
     /* width:40px; */
-    width: 3%;
+    /* width: 3%; */
 }
 .regular-problem{
     display: flex;
     align-items: flex-end;
     height: 100%;
-    min-width:  180px;
+    min-width:  400px;
     --bs-list-group-border-width: unset;
     border-radius:unset;
     border-left: 1px solid #dee2e6;
+    --bs-list-group-action-hover-bg:unset;
 }
 .folder-menu{
     display: flex;
@@ -45,7 +46,12 @@
 }
 
 .list-group-item.active {
-    background-color: #4070AA;
+    /* background-image: radial-gradient(circle, #085438 ,#2A6078); #CA884B ,#D1825B,#CCA142*/
+    /* background-image: radial-gradient(circle, #085438 ,  #2A6078); #77AA56 */
+    background-image: radial-gradient(circle, #085438 ,   #77AA56);
+    background-size: 150% 150%; /* 控制渐变的尺寸 */
+    background-position: right bottom; /* 控制渐变的位置 */
+    /* background-color: #4070AA; */
 }
 /* .header-wrapper .logo-strong{
     font-size: larger;
@@ -64,3 +70,27 @@
     
     animation: progressAnimation 2s linear forwards; /* 持续时间为 2 秒，线性动画 */
 }
+.list-group{
+    --bs-list-group-active-bg: unset;
+    --bs-list-group-active-border-color: unset;
+   
+}
+.d-flex h5{
+    font-size: 22px;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+.d-flex small{
+    color: #18a64c;
+    font-weight: 700;
+
+}
+pre{
+    padding-top: 10px;
+    text-wrap: wrap;
+}
+
+/* #folderStructure{
+    font-size: 12px;
+
+} */
