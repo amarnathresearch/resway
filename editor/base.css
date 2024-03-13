@@ -202,9 +202,10 @@
   display: flex;
   cursor: col-resize; 
   user-select: none;
-  width: 3px;
-  min-width: 3px;
-  background-color: rgb(213, 209, 209);
+  width: 2px;
+  min-width: 2px;
+  background-color :#7cb5c8;
+  /* background-color: rgb(213, 209, 209); */
   height: 100%;
   display: flex;
   justify-content: center;
@@ -343,10 +344,10 @@
 }
 
 .compiler-result{
-  display: none;
+  display: block;
 }
 .submit-result{
-  display: none;
+  display: block;
 }
 .fast-collapse {
   transition-duration: 0.01s; /* 设置较短的过渡持续时间 */

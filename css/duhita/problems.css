@@ -89,8 +89,16 @@ pre{
     padding-top: 10px;
     text-wrap: wrap;
 }
+.f-flex{
+    display: flex;
+   
+    flex-direction: column;
+}
 
-/* #folderStructure{
+#folderStructure{
     font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
 
-} */
+}
