@@ -17,14 +17,11 @@
     display: flex;
     height: 100%;
     width: auto;
-<<<<<<< HEAD
     min-width: 170px;
     /* margin-right: 20px;
     z-index: 0; */
-=======
     /* min-width: 170px;
     margin-right: 20px; */
->>>>>>> 636b09f5c8bc3b0a2a09a7a9232bbec2e2dcfc89
     /* overflow-y: auto ; */
 }
 
