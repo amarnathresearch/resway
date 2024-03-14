@@ -38,8 +38,9 @@
  }
  .CodeMirror-linenumber{
     color: #37778c;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     border-right: #37778c;
+    font-size: 12px;
 
  }
  /* .CodeMirror-gutters{
@@ -48,5 +49,11 @@
  } */
  .CodeMirror-sizer{
   border: 1px solid  #7cb5c8;
-  /* min-width: fit-content; */
+
+ }
+
+ .CodeMirror-gutter, .CodeMirror-gutters, .CodeMirror-linenumber, .CodeMirror-scroll, .CodeMirror-sizer{
+  box-sizing: content-box;
+  background-color: #fff;
+
  }
