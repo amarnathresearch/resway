@@ -30,7 +30,7 @@
 # Main
 --------------------------------------------------------------*/
 #main {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: 20px 60px;
     transition: all 0.3s;
   }
@@ -264,7 +264,7 @@
   /* new sidebar*/
 
   .self-sidebar{
-    overflow: auto
+    /* overflow: auto */
   }
 
 

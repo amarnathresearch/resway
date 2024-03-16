@@ -1,0 +1,65 @@
+.table-striped>tbody>tr:nth-of-type(odd)>*{
+    /* background-color: #f8f9fa; 
+    background-image: linear-gradient(to right, #085438,#B9CD74 ,#C3E8EE  #757430 ,#2A6078);
+    */
+    background-image: linear-gradient(to bottom, #CED7D6, #C3E8EE );
+}
+
+
+.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: #fff; /* 自定义偶数行的背景色 */
+}
+
+.table>:not(caption)>*>*{
+  background-color: unset;
+  /* box-shadow:unset; */
+}
+.col-lg-9{
+    margin-bottom: 10px;
+    border-left: 1px solid #DEE2E6;
+    margin-left: 10px;
+}
+.bg-light {
+    /* background-image: linear-gradient(to bottom,#B9CD74 ,  #757430  ); */
+    background-color: #FFF;
+
+}
+
+.sidebar-menu{
+    width: 70px;
+}
+
+.logo-img{
+    width: 44px;
+    height: 44px;
+    margin-top: 17px;
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) { /* 修改的是小型屏幕（sm）的宽度 */
+    .row>* {
+        flex-shrink: unset;
+        width: unset;
+  }
+}
+
+.card{
+    --bs-card-border-width:unset;
+}
+.topic-a{
+    display: block;
+
+}
+.topic-title{
+    color: inherit; /* 继承父元素的文本颜色 */
+    text-decoration: none; /* 去除下划线 */
+}
+.topic-title:hover{
+    color: #007AFF;
+}
+.btn{
+    --bs-btn-padding-x: unset;
+}
+.table{
+    text-align: center;
+}
