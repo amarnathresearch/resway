@@ -540,3 +540,15 @@ body {
     overflow: hidden;
   }
 
+
+  /*
+  
+  **/
+  #hero .topic-instruction{
+    justify-content: center;
+  }
+#hero .instructions-box{
+  padding: 10px 10px;
+}
+
+ 
