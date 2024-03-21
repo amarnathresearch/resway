@@ -1,10 +1,12 @@
-
-.strong-logo{
+.course-logo{
+  height: 100px;
+}
+/* .strong-logo{
     color:#bace76 ;
     font-size: 45px;
     font-weight: 800;
 
-}
+} */
 
 
 @media (min-width: 768px){
@@ -135,7 +137,7 @@ body {
     box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
   }
   
-  #header .logo {
+  /* #header .logo {
     font-size: 28px;
     margin: 0;
     padding: 0;
@@ -144,13 +146,13 @@ body {
     letter-spacing: 0.5px;
     font-family: "Poppins", sans-serif;
   }
-  
+   */
   #header .logo a {
     color: #16507b;
   }
   
   #header .logo img {
-    max-height: 40px;
+    max-height: 50px;
   }
   
   @media (max-width: 992px) {

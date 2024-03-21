@@ -31,3 +31,20 @@
     width: 100%;
     height: 100%;
   }
+  .text-center{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+   color: #1a1a1a;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .btn-primary{
+    --bs-btn-bg:  #1D6C98;
+      --bs-btn-border-color: unset;
+      --bs-btn-hover-bg: #48a6d9;
+      --bs-btn-disabled-bg: #2895cf;
+  }
+ 
+  .login-logo{
+    height: 35px;
+  }
