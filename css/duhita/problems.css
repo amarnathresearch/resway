@@ -1,24 +1,30 @@
 ul {
     list-style-type: none;
     padding-left: 0;
-    margin-top: 0; /* Remove default margin */
+    margin-top: 0; 
 }
 
 ul ul {
     padding-left: 10px;
-    margin-top: 0; /* Remove default margin */
+    margin-top: 0; 
 }
 
 ul li {
     margin-top: 0; 
-    cursor: pointer; /* Change cursor to pointer */
+    cursor: pointer;
 }
 
+#givenName{
+    margin-top: 13px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+
+}
 .context-menu {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    /* border: 1px solid #ccc; */
+  
     min-width: 90px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
     z-index: 77777;
@@ -41,7 +47,7 @@ font-style: normal;
     background-color: #3688B1;
     color:#ffffff;
 }
-/* CSS for highlighting menu item */
+
 #folderStructure ul{
     min-width: 142px;
 }
@@ -58,8 +64,6 @@ font-style: normal;
     font-weight: bolder;
 }
 .highlight {
-    /* background-color: #50586C; 
-    color:#DCE2F0; */
     border-bottom: 1px solid #DCE2F0;
 }
 .can-delete {
@@ -71,8 +75,6 @@ font-style: normal;
 
 .pro-menu{
     height: 100%;
-    /* width:40px; */
-    /* width: 3%; */
 }
 .regular-problem{
     display: flex;
@@ -89,11 +91,7 @@ font-style: normal;
     height: 100%;
     width: auto;
     min-width: 153px;
-    /* margin-right: 20px;
-    z-index: 0; */
-    /* min-width: 170px;
-    margin-right: 20px; */
-    /* overflow-y: auto ; */
+   
 }
 
 .folder-editor{
@@ -109,10 +107,6 @@ font-style: normal;
 
 }
 
-.editor-menu{
-    /* width: 85%; */
-    /* border: 1px solid #121212; */
-}
 .draggable-menu {
     width: 85%;;
 }
@@ -129,12 +123,8 @@ font-style: normal;
     background-color: #3688B1;
     background-size: 150% 150%; /* 控制渐变的尺寸 */
     background-position: right bottom; /* 控制渐变的位置 */
-    /* background-color: #4070AA; */
 }
-/* .header-wrapper .logo-strong{
-    font-size: larger;
-    color: #D6E342;
-} */
+
 
  /* 自定义动画效果 */
  @keyframes progressAnimation {
@@ -190,11 +180,9 @@ pre{
    
 }
 .header-nav{
+    
     display: flex;
     align-items: flex-end;
-}
-.givenName{
-    margin-top: 13px;
 }
 
 #editor-container {
@@ -228,20 +216,16 @@ pre{
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    /* height: auto; */
 }
 
 .draggable-button {
     display: flex;
     cursor: pointer;
-    /* display: inline-block; */
-    /* padding: 2px 5px; Adjust padding as needed */
+
     padding: 6px 2px 2px 4px;
     margin-right: 0; /* Remove margin between buttons */
     border: 1px solid #ccc;
-    /* border-radius: 4px; */
-    /* background-color: #fff; */
-    /* font-size: 13px; Adjust font size as needed */
+
     font-size: 14px;
 font-family: 'Open Sans', sans-serif;
 
@@ -304,3 +288,10 @@ background-color :#7cb5c8;/* 滚动条滑块颜色 */
 background-color: #1C5297;/* 鼠标悬停时滚动条滑块颜色 */
 }
 
+.dropdown-menu-custom{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+
+}
