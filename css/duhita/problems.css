@@ -1,3 +1,74 @@
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0; /* Remove default margin */
+}
+
+ul ul {
+    padding-left: 10px;
+    margin-top: 0; /* Remove default margin */
+}
+
+ul li {
+    margin-top: 0; 
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.context-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /* border: 1px solid #ccc; */
+    min-width: 90px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    z-index: 77777;
+    border-radius: 2px;
+}
+.context-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.context-menu ul li {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+font-style: normal;
+
+}
+.context-menu ul li:hover {
+    background-color: #3688B1;
+    color:#ffffff;
+}
+/* CSS for highlighting menu item */
+#folderStructure ul{
+    min-width: 142px;
+}
+.highlighted {
+   
+    background-color: #3688B1;
+  
+    color:#ffffff;
+    border-radius: 3px;
+}
+.highlightedbold {
+    background-color: #dddfe2;
+    color:#ffffff;
+    font-weight: bolder;
+}
+.highlight {
+    /* background-color: #50586C; 
+    color:#DCE2F0; */
+    border-bottom: 1px solid #DCE2F0;
+}
+.can-delete {
+    color:#710000;
+}
+
+
+
+
 .pro-menu{
     height: 100%;
     /* width:40px; */
@@ -53,7 +124,9 @@
 .list-group-item.active {
     /* background-image: radial-gradient(circle, #085438 ,#2A6078); #CA884B ,#D1825B,#CCA142*/
     /* background-image: radial-gradient(circle, #085438 ,  #2A6078); #77AA56 */
-    background-image: radial-gradient(circle, #085438 ,   #77AA56);
+    /* background-image: radial-gradient(circle, #085438 ,   #77AA56); */
+    /* background-image: radial-gradient(circle, #3688B1); */
+    background-color: #3688B1;
     background-size: 150% 150%; /* 控制渐变的尺寸 */
     background-position: right bottom; /* 控制渐变的位置 */
     /* background-color: #4070AA; */
@@ -101,9 +174,8 @@ pre{
 }
 
 #folderStructure{
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Open Sans', sans-serif;
-   
     font-style: normal;
 
 }
@@ -114,5 +186,121 @@ pre{
     font-family: 'Open Sans', sans-serif;
    color: #1a1a1a;
     font-style: normal;
-    /* font-size: x-small; */
+    --bs-btn-bg: unset;
+   
 }
+.header-nav{
+    display: flex;
+    align-items: flex-end;
+}
+.givenName{
+    margin-top: 13px;
+}
+
+#editor-container {
+    width: 100%;
+    padding: 0px;
+}
+
+ .resultTable {
+     border: 1px solid #dddddd; 
+     padding: 8px;
+     text-align: left;
+ }
+ #loading-bar {
+ width: 100%;
+ height: 10px;
+ background-color: #ffffff;
+ border: 1px solid #4caf50;
+ border-radius: 5px;
+ margin: 20px 0;
+}
+#progress-bar {
+ width: 0%;
+ height: 100%;
+ background-color: #4caf50;
+ border-radius: 5px;
+}
+
+
+ /* Custom CSS for draggable buttons */
+ .draggable-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* height: auto; */
+}
+
+.draggable-button {
+    display: flex;
+    cursor: pointer;
+    /* display: inline-block; */
+    /* padding: 2px 5px; Adjust padding as needed */
+    padding: 6px 2px 2px 4px;
+    margin-right: 0; /* Remove margin between buttons */
+    border: 1px solid #ccc;
+    /* border-radius: 4px; */
+    /* background-color: #fff; */
+    /* font-size: 13px; Adjust font size as needed */
+    font-size: 14px;
+font-family: 'Open Sans', sans-serif;
+
+font-style: normal;
+}
+
+.close-button {
+
+    display: flex;
+align-items: center;
+height: 16px;
+width: 16px;
+/* border: 1px solid red; */
+border-radius: 3px;
+cursor: pointer;
+margin-left: 2px;
+margin-top: 2px;
+font-weight: bold;
+padding-left: 4px;
+padding-top: 2px;
+font-size: 14px;
+color: red;
+
+}
+.close-button:hover{
+    background-color:#ECEFF7;
+}
+.draggable-menu{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    width: 98%;  
+    position: relative; /* 设置相对定位，用于绝对定位元素的参照 */
+    border-bottom: 1px solid #d6e6f0;
+
+}
+#dragcontainer{
+    display: flex; /* 水平排列 */
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    transition: transform 0.5s ease; /* 添加过渡效果 */
+}
+
+#dragcontainer::-webkit-scrollbar {
+height: 4px; /* 滚动条宽度 */
+}
+
+#dragcontainer::-webkit-scrollbar-track {
+background-color: #ffff /* 滚动条轨道背景色 */
+}
+
+#dragcontainer::-webkit-scrollbar-thumb {
+background-color :#7cb5c8;/* 滚动条滑块颜色 */
+/* border-radius: 2px; 滚动条滑块圆角 */
+
+}
+
+#dragcontainer::-webkit-scrollbar-thumb:hover {
+
+background-color: #1C5297;/* 鼠标悬停时滚动条滑块颜色 */
+}
+

@@ -3,7 +3,7 @@ html{
   height: 100%;
 }
 .header{
-  border-bottom: 2px solid #F2F8FC;
+  border-bottom:1px solid #dbeaf4;
 }
 .header .header-wrapper{
     /* color: #fff; */
@@ -19,8 +19,8 @@ html{
   }
 
 .header .gradient-header{
-  /* background-image: linear-gradient(to right, #085438,#B9CD74 ,  #757430 ,#2A6078); */
-  /* mix-blend-mode: overlay; 混合模式 #085438  #D1DDDB #85B8CB  #283B42 */
+  /* background-image: linear-gradient(to right, #085438,#B9CD74 ,  #757430 ,#2A6078);  */
+  /* mix-blend-mode: overlay; 混合模式 #085438  #D1DDDB #85B8CB  #283B42*/
 }
 .logo-img {
 
@@ -121,7 +121,7 @@ html{
 
 .main-view{
   position: absolute;
-  top:0;
+  top: 5px;
   left: 0;
   right: 0;
   bottom: 0;

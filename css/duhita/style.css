@@ -629,7 +629,6 @@ align-items: center;
 
 .course-title{
        
-    /* margin:  10px 0 13px 0; */
     height: 44px;
 }
 .topic-section{
@@ -642,13 +641,8 @@ align-items: center;
   display: flex;
   flex-direction: column;
 
-  /* min-width: 1200px; */
   margin: 0px 10px;
 }
-/* .topic-title{
-  width: 100%;
-} */
-
 
 .topic-item{
   display: flex;
