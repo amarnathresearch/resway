@@ -295,3 +295,12 @@ background-color: #1C5297;/* 鼠标悬停时滚动条滑块颜色 */
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
 
 }
+.mc-problems{
+    margin-left:unset;
+    min-width: 400px;
+    border-left: 1px solid #85cbed;
+    border-right: 1px solid #85cbed;
+}
+.mc-problems .d-flex{
+    margin: 10px;
+}
