@@ -75,7 +75,11 @@ font-style: normal;
 
 .pro-menu{
     height: 100%;
+    overflow-y: auto;
+    min-width:3%;
+    /* border-right: 1px solid red; */
 }
+
 .regular-problem{
     display: flex;
     align-items: flex-end;
@@ -85,6 +89,20 @@ font-style: normal;
     border-radius:unset;
     border-left: 1px solid #dee2e6;
     --bs-list-group-action-hover-bg:unset;
+}
+.ds-problem{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+   padding: 10px;
+   overflow-y: auto;
+    min-width:  200px;
+    border-left: 1px solid #dee2e6;
+    border-radius: unset;
+    --bs-list-group-action-hover-bg:unset;
+}
+.list-group-item {
+    text-align: center;
 }
 .folder-menu{
     display: flex;
@@ -303,4 +321,24 @@ background-color: #1C5297;/* 鼠标悬停时滚动条滑块颜色 */
 }
 .mc-problems .d-flex{
     margin: 10px;
+}
+.ds-editor{
+    overflow-y: auto;
+    overflow-x: auto;
+    /* width: calc(100% - 210px); */
+    width: 100%;
+
+}
+#all{
+    width: 98%;
+}
+#ds-container{
+width: 100%;
+}
+#common-container{
+    width: 100%;
+}
+.card{
+    flex-grow: 1; /* 设置为1以填充剩余空白 */
+    width: 100%;
 }
