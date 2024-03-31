@@ -76,7 +76,7 @@ font-style: normal;
 .pro-menu{
     height: 100%;
     overflow-y: auto;
-    min-width:3%;
+    min-width:60px;
     /* border-right: 1px solid red; */
 }
 
