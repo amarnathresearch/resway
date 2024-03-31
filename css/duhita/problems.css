@@ -101,7 +101,7 @@ font-style: normal;
     border-radius: unset;
     --bs-list-group-action-hover-bg:unset;
 }
-.list-group-item {
+.pro-menu .list-group-item {
     text-align: center;
 }
 .folder-menu{
