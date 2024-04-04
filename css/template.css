@@ -213,12 +213,21 @@ h6 {
 .header {
   transition: all 0.5s;
   z-index: 997;
-  height: 60px;
+  /* height: 60px; */
+  /* padding: 15px; */
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
   background-color: #fff;
   padding-left: 20px;
   /* Toggle Sidebar Button */
   /* Search Bar */
+}
+#header .logo img {
+  max-height: 50px;
+}
+@media (min-width: 1400px){
+  .container {
+    max-width: 1530px;
+}
 }
 
 .header .toggle-sidebar-btn {
