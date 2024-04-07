@@ -128,8 +128,9 @@ body {
     transition: all 0.5s;
     background: #fff;
     z-index: 997;
-    padding: 15px 0;
+    /* padding: 15px 0; */
     border-bottom: 1px solid #e6f2fb;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
   }
   
   #header.header-scrolled {
