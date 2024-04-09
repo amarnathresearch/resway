@@ -18,17 +18,10 @@ html{
 
   }
 
-.header .gradient-header{
-  /* background-image: linear-gradient(to right, #085438,#B9CD74 ,  #757430 ,#2A6078);  */
-  /* mix-blend-mode: overlay; 混合模式 #085438  #D1DDDB #85B8CB  #283B42*/
-}
 .logo-img {
 
-    height: 45px;
-     width:100px;
-    /* font-weight: 700;
-    color: #fff;
-    font-family: "Nunito", sans-serif; */
+    height: 50px;
+ 
 }
 
 .header .header-wrapper .left {
@@ -98,7 +91,12 @@ html{
 
 .header .header-wrapper .right {
     display: flex;
-    align-items: center;
+    flex-direction: column-reverse;
+    /* align-items: center; */
+}
+.right .nav-item{
+  padding: 0px 10px;
+
 }
 
 .header-wrapper .right .no-bg {
@@ -129,7 +127,9 @@ html{
   /* height: 655px; */
   margin-top: 50px;
   display: flex;
-  overflow-x: hidden;
+  /* overflow: auto; */
+  /* overflow: hidden; */
+ 
 
 
 }
