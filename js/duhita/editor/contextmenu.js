@@ -1,7 +1,7 @@
 // Your existing JavaScript code
 
 // Function to recursively build the HTML structure
-function buildHtml(parentId, data) {
+function BuildFolderHtml(parentId, data) {
     let html = "";
     const folders = data.filter(item => item.parent_id === parentId && item.is_folder);
     const files = data.filter(item => item.parent_id === parentId && !item.is_folder);
@@ -12,7 +12,7 @@ function buildHtml(parentId, data) {
 
     folders.forEach(folder => {
         html += `<li><li data-type="folder" class="highlight" data-id="${folder.id}" id="f-${folder.id}"><i class="bi bi-chevron-down"></i>${folder.name}</li>`;
-        const nestedHtml = buildHtml(folder.id, data); // Recursively build the nested structure
+        const nestedHtml = BuildFolderHtml(folder.id, data); // Recursively build the nested structure
         if (nestedHtml) {
             html += "<ul>"; // Start a new nested list
             html += nestedHtml;
@@ -28,14 +28,14 @@ function buildHtml(parentId, data) {
     return html;
 }
 
-function buildFolderStructure(data) {
+function BuildFolderStructure(data) {
     let html = "<ul>";
-    html += buildHtml(null, data); // Start building from the root
+    html += BuildFolderHtml(null, data); // Start building from the root
     html += "</ul>";
     return html;
 }
 
-function highlightMenuItem(item) {
+function HighlightMenuItem(item) {
     // Remove highlight from previously highlighted items
     const highlightedItems = document.querySelectorAll('.highlighted');
     highlightedItems.forEach(element => {
@@ -53,9 +53,9 @@ document.getElementById('folderStructure').addEventListener('contextmenu', funct
         event.preventDefault();
         if (target.closest('#folderStructure')) {
             if (target.dataset.type === 'folder') {
-                showFolderContextMenu(event, target.textContent, target.dataset.id, target.getBoundingClientRect());
+                ShowFolderContextMenu(event, target.textContent, target.dataset.id, target.getBoundingClientRect());
             } else {
-                showFileContextMenu(event, target.textContent, target.dataset.id, target.getBoundingClientRect());
+                ShowFileContextMenu(event, target.textContent, target.dataset.id, target.getBoundingClientRect());
             }
         }
     }
@@ -67,8 +67,8 @@ document.getElementById('folderStructure').addEventListener('click', function(ev
     if (target.nodeName === 'LI') {
         if (target.closest('#folderStructure')) {
             const itemId = target.dataset.id;
-            highlightMenuItem(target);
-            fileFolderClick(itemId);
+            HighlightMenuItem(target);
+            FileFolderClick(itemId);
             // Call your function passing the item ID
             yourFunction(itemId);
         }
@@ -78,12 +78,12 @@ document.getElementById('folderStructure').addEventListener('click', function(ev
 // Event listener to hide context menus when clicking outside
 document.addEventListener('click', function(event) {
     if (!event.target.closest('.context-menu')) {
-        hideAllContextMenus();
+        HideAllContextMenus();
     }
 });
 
 // Function to hide all context menus
-function hideAllContextMenus() {
+function HideAllContextMenus() {
     const contextMenus = document.querySelectorAll('.context-menu');
     contextMenus.forEach(menu => {
         menu.style.display = 'none';
@@ -93,9 +93,9 @@ function hideAllContextMenus() {
 // Your existing JavaScript code
 
 // Function to show folder context menu
-function showFolderContextMenu(event, folderName, itemId, boundingRect) {
+function ShowFolderContextMenu(event, folderName, itemId, boundingRect) {
     event.preventDefault();
-    hideAllContextMenus();
+    HideAllContextMenus();
     const folderContextMenu = document.getElementById('folderContextMenu');
     folderContextMenu.style.left = event.pageX + 'px'; // Adjusted to align with right side
     folderContextMenu.style.top = event.pageY - 50 + 'px';
@@ -105,15 +105,15 @@ function showFolderContextMenu(event, folderName, itemId, boundingRect) {
     // Show only folder options
     document.querySelectorAll('.folder-option').forEach(item => item.style.display = 'block');
     document.querySelectorAll('.file-option').forEach(item => item.style.display = 'none');
-    highlightMenuItem(event.target);
+    HighlightMenuItem(event.target);
     folderContextMenu.setAttribute('data-item-id', itemId);
 
 }
 
 // Function to show file context menu
-function showFileContextMenu(event, fileName, itemId, boundingRect) {
+function ShowFileContextMenu(event, fileName, itemId, boundingRect) {
     event.preventDefault();
-    hideAllContextMenus();
+    HideAllContextMenus();
     const fileContextMenu = document.getElementById('fileContextMenu');
     fileContextMenu.style.left = event.pageX + 'px'; // Adjusted to align with right side
     fileContextMenu.style.top = event.pageY - 50 + 'px';
@@ -122,6 +122,6 @@ function showFileContextMenu(event, fileName, itemId, boundingRect) {
     // Show only file options
     document.querySelectorAll('.file-option').forEach(item => item.style.display = 'block');
     document.querySelectorAll('.folder-option').forEach(item => item.style.display = 'none');
-    highlightMenuItem(event.target);
+    HighlightMenuItem(event.target);
     fileContextMenu.setAttribute('data-item-id', itemId);
 }
