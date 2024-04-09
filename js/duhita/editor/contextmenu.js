@@ -67,8 +67,10 @@ document.getElementById('folderStructure').addEventListener('click', function(ev
     if (target.nodeName === 'LI') {
         if (target.closest('#folderStructure')) {
             const itemId = target.dataset.id;
+            
             HighlightMenuItem(target);
-            FileFolderClick(itemId);
+            
+            FileFolderClick(itemId , target.dataset.type);
             // Call your function passing the item ID
             yourFunction(itemId);
         }
