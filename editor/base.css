@@ -128,7 +128,7 @@ html{
   margin-top: 50px;
   display: flex;
   /* overflow: auto; */
-  /* overflow: hidden; */
+  overflow: hidden;
  
 
 
