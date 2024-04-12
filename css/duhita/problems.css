@@ -149,11 +149,8 @@ font-style: normal;
 
 }
 
-.list-group-item.active {
-    /* background-image: radial-gradient(circle, #085438 ,#2A6078); #CA884B ,#D1825B,#CCA142*/
-    /* background-image: radial-gradient(circle, #085438 ,  #2A6078); #77AA56 */
-    /* background-image: radial-gradient(circle, #085438 ,   #77AA56); */
-    /* background-image: radial-gradient(circle, #3688B1); */
+.pro-menu .list-group-item.active {
+  
     background-color: #3688B1;
     background-size: 150% 150%; /* 控制渐变的尺寸 */
     background-position: right bottom; /* 控制渐变的位置 */
