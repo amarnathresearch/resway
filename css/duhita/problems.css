@@ -13,6 +13,12 @@ ul li {
     margin-top: 0; 
     cursor: pointer;
 }
+.header{
+    /* display: flex; */
+    border-bottom: 1px solid #dbeaf4;
+    justify-content: space-between;
+}
+
 
 #givenName{
     /* margin-top: 13px; */
@@ -20,6 +26,22 @@ ul li {
     font-family: 'Open Sans', sans-serif;
 
 }
+@media  (max-width: 391px) {
+   
+    #givenName{
+      font-size: 12px;
+  
+   } 
+}
+/* @media (max-width:483px){
+    #givenName{
+        font-size: 12px;
+    
+     } 
+     
+    
+} */
+
 .context-menu {
     display: none;
     position: absolute;
