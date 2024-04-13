@@ -18,6 +18,9 @@ ul li {
     border-bottom: 1px solid #dbeaf4;
     justify-content: space-between;
 }
+.headmenu-flex{
+    display: flex;
+}
 
 
 #givenName{
@@ -26,21 +29,68 @@ ul li {
     font-family: 'Open Sans', sans-serif;
 
 }
-@media  (max-width: 391px) {
-   
-    #givenName{
-      font-size: 12px;
-  
-   } 
+
+.navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(10, 38, 58, 0.9);
+    transition: 0.3s;
+    z-index: 999;
 }
-/* @media (max-width:483px){
-    #givenName{
-        font-size: 12px;
-    
-     } 
-     
-    
-} */
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover>a {
+    color: #2487ce;
+}
+.navbar-mobile a, .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #124265;
+}
+
+
+.mobile-nav-toggle {
+    color: #124265;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 2;
+    transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+    .mobile-nav-toggle {
+      display: block;
+    }
+    .self-d ul{
+        display: none;
+      }
+      .navbar-mobile ul ul {
+        display: none;
+      }
+}
+.navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+.mobile-nav-toggle.bi-x {
+    color: #fff;
+}
+.navbar-mobile a, .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #124265;
+}
 
 .context-menu {
     display: none;
