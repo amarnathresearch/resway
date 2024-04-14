@@ -46,5 +46,8 @@
   }
  
   .login-logo{
-    height: 35px;
+    text-align: center;
+  }
+  .login-img{
+    height: 110px;
   }
