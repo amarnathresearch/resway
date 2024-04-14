@@ -185,12 +185,22 @@ font-style: normal;
     border-radius: unset;
     --bs-list-group-action-hover-bg:unset;
 }
+@media (max-width:783px) {
+    .codeBtn button{
+        font-size: 12px;
+    }
+    #hiddenButton1, #hiddenButton2, #hiddenButton3  {
+        display: none;
+    }
+}
+
 .pro-menu .list-group-item {
     text-align: center;
 }
 .flex-container{
     display: flex;
     overflow-x: auto;
+    width: 100%;
     }
 .folder-menu{
     display: flex;
