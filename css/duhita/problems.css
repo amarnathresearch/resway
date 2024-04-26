@@ -433,7 +433,9 @@ background-color: #1C5297;/* 鼠标悬停时滚动条滑块颜色 */
 
 }
 #all{
-    width: 98%;
+    /* width: 98%; */
+    width: 100%;
+    overflow: auto;
 }
 #ds-container{
 width: 100%;
@@ -441,7 +443,7 @@ width: 100%;
 #common-container{
     width: 100%;
 }
-.card{
+#common-container .card{
     flex-grow: 1; /* 设置为1以填充剩余空白 */
-    width: 100%;
+    width: 98%;
 }
