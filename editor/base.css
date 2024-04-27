@@ -105,8 +105,10 @@ html{
 
 .header .header-wrapper .right {
     display: flex;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
     /* align-items: center; */
+    font-size: 14px;
+    color:#16507b;
     flex: 2;
 }
 /* @media (max-width: 391px) {

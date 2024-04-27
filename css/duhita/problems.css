@@ -25,9 +25,9 @@ ul li {
 
 #givenName{
     /* margin-top: 13px; */
-    font-size: 18px;
+    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
-
+    color:#16507b;
 }
 
 .navbar-mobile {
@@ -446,4 +446,16 @@ width: 100%;
 #common-container .card{
     flex-grow: 1; /* 设置为1以填充剩余空白 */
     width: 98%;
+}
+
+.task-header{
+    font-size: 14px;
+}
+
+.task-body{
+    font-size: 13px;
+}
+
+.testcase{
+    font-size: 14px;
 }
