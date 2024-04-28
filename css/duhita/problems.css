@@ -20,6 +20,19 @@ ul li {
 }
 .headmenu-flex{
     display: flex;
+    margin-top: 14px;
+}
+/* .right .self-d{
+    display: flex;
+    
+} */
+@media (min-width: 991px) {
+    .dropdown-menu[data-bs-popper] {
+        
+        left: -60px;
+     
+    }
+    
 }
 
 
@@ -31,6 +44,8 @@ ul li {
 }
 
 .navbar-mobile {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     overflow: hidden;
     top: 0;
@@ -85,13 +100,17 @@ ul li {
 }
 .mobile-nav-toggle.bi-x {
     color: #fff;
+  
 }
 .navbar-mobile a, .navbar-mobile a:focus {
     padding: 10px 20px;
     font-size: 15px;
     color: #124265;
 }
-
+.dropdown-menu.show {
+    display: block;
+    height: 170px;
+}
 .context-menu {
     display: none;
     position: absolute;
