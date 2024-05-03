@@ -168,3 +168,13 @@
 .featured-services .service-item:hover h4 a {
   color: #0EA2BD;
 }
+
+.self-py-3{
+  height: 800px;
+  overflow: auto;
+
+}
+.service-list{
+  height: 440px;
+  overflow: auto;
+}
