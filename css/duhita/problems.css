@@ -169,6 +169,13 @@ font-style: normal;
     overflow-y: auto;
     min-width:60px;
     border-right: 1px solid #dee2e6;
+    scrollbar-width: thin; /* For Firefox */
+    scr
+}
+
+/* For WebKit based browsers (Chrome, Safari) */
+.pro-menu::-webkit-scrollbar {
+    width: 5px; /* Width of vertical scrollbar */
 }
 
 .regular-problem{
@@ -197,13 +204,20 @@ font-style: normal;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-   padding: 10px;
-   overflow-y: auto;
+    padding: 10px;
+    overflow-y: auto;
     min-width:  200px;
     border-left: 1px solid #dee2e6;
     border-radius: unset;
     --bs-list-group-action-hover-bg:unset;
+    scrollbar-width: thin;
 }
+
+/* For WebKit based browsers (Chrome, Safari) */
+.ds-problem::-webkit-scrollbar {
+    width: 5px; /* Width of vertical scrollbar */
+}
+
 @media (max-width:783px) {
     .codeBtn button{
         font-size: 12px;
@@ -240,10 +254,16 @@ font-style: normal;
 }
 .project-editor{
     z-index: 777;
-    /* width: 100%; */
+    width: 100%;
     overflow: auto;
     /* margin-left: 10px; */
+    scrollbar-width: thin;
 
+}
+
+/* For WebKit based browsers (Chrome, Safari) */
+.project-editor::-webkit-scrollbar {
+    width: 5px; /* Width of vertical scrollbar */
 }
 
 .draggable-menu {
@@ -455,6 +475,11 @@ background-color: #1C5297;/* 鼠标悬停时滚动条滑块颜色 */
     /* width: 98%; */
     width: 100%;
     overflow: auto;
+    scrollbar-width: thin; /* For Firefox */
+}
+/* For WebKit based browsers (Chrome, Safari) */
+#all::-webkit-scrollbar {
+    width: 5px; /* Width of vertical scrollbar */
 }
 #ds-container{
 width: 100%;
