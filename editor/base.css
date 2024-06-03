@@ -240,7 +240,7 @@ html{
   display: flex;
   cursor: col-resize; 
   user-select: none;
-  width: 2px;
+  max-width: 5px;
   min-width: 2px;
   background-color :#7cb5c8;
   /* background-color: rgb(213, 209, 209); */
@@ -249,11 +249,19 @@ html{
   justify-content: center;
   align-items: center;
   z-index: 2;
+  margin-left: 5px;
+  margin-right: 5px;
 }
+
 .main-view .divider:hover{
   background-color: #1C5297;
 }
-
+.handle {
+  width: 5px;
+  padding:2px;
+  height: 40px;
+  background-color: #1C5297; /* Darker color for the handle */
+}
 
 .float-div{
   float: left;
