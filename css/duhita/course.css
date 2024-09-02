@@ -7,7 +7,10 @@
     font-weight: 800;
 
 } */
-
+.alert-no-bg {
+  background-color: white !important; /* No background */
+  padding: 3px;
+}
 
 @media (min-width: 768px){
     .col-md-6 {
