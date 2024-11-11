@@ -1,6 +1,8 @@
 .login-container{
-    margin: 2rem 0 !important;
+    /* margin: 2rem 0 !important; */
     overflow-x: hidden;
+    padding: 20px;
+    
 }
 .login-card{
     width: 400px;
@@ -15,7 +17,7 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    /* overflow-x: hidden; */
     position: relative; /* 确保父元素相对定位 */
   }
   .login-particles {
@@ -169,12 +171,13 @@
   color: #0EA2BD;
 }
 .self-py-3{
-  height: 600px;
+  /* height: 600px; */
 }
 .self-py-3,
 .self-py-3 ul{
-  overflow-y: auto;
-  overflow-x: auto;
+  /* overflow-y: auto;
+  overflow-x: auto; */
+  padding: 20px;
 
 }
 .service-list{
