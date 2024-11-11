@@ -462,11 +462,11 @@ body {
   }
   
   #hero .icon-boxes {
-    margin-top: 28px;
+    margin-top: 10px;
   }
   
   #hero .icon-box {
-    padding: 50px 30px;
+    padding: 30px 20px;
     position: relative;
     overflow: hidden;
     background: #fff;
@@ -502,7 +502,28 @@ body {
     line-height: 1;
     color: #2487ce;
   }
-  
+  .topic-box {
+    margin: 0px;
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid #d2d9db;
+    background-color: #fff;
+    box-shadow: 0 0 29px 0 rgba(133, 141, 146, 0.08);
+    border-radius: 4px;
+  }
+
+
+  .topic-box:hover {
+    color: #023457;
+    background-color: #e1eaf0;
+    /* font-weight: bold; */
+    /* border:2px solid #023457; */
+  }
+  .litopic .list-group-item:hover{
+      /* border:2px solid #023457; */
+      background-color: #023457;
+  }
+
   #hero .icon-box:hover {
     transform: scale(1.08);
   }
