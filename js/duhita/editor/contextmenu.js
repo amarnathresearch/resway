@@ -1,39 +1,39 @@
 // Your existing JavaScript code
 
 // Function to recursively build the HTML structure
-function BuildFolderHtml(parentId, data) {
-    let html = "";
-    const folders = data.filter(item => item.parent_id === parentId && item.is_folder);
-    const files = data.filter(item => item.parent_id === parentId && !item.is_folder);
+// function BuildFolderHtml(parentId, data) {
+//     let html = "";
+//     const folders = data.filter(item => item.parent_id === parentId && item.is_folder);
+//     const files = data.filter(item => item.parent_id === parentId && !item.is_folder);
 
-    // Sort folders and files by name in ascending order
-    folders.sort((a, b) => a.name.localeCompare(b.name));
-    files.sort((a, b) => a.name.localeCompare(b.name));
+//     // Sort folders and files by name in ascending order
+//     folders.sort((a, b) => a.name.localeCompare(b.name));
+//     files.sort((a, b) => a.name.localeCompare(b.name));
 
-    folders.forEach(folder => {
-        html += `<li><li data-type="folder" class="highlight" data-id="${folder.id}" id="f-${folder.id}"><i class="bi bi-chevron-down"></i>${folder.name}</li>`;
-        const nestedHtml = BuildFolderHtml(folder.id, data); // Recursively build the nested structure
-        if (nestedHtml) {
-            html += "<ul>"; // Start a new nested list
-            html += nestedHtml;
-            html += "</ul>"; // Close the nested list
-        }
-        html += "</li>";
-    });
+//     folders.forEach(folder => {
+//         html += `<li><li data-type="folder" class="highlight" data-id="${folder.id}" id="f-${folder.id}"><i class="bi bi-chevron-down"></i>${folder.name}</li>`;
+//         const nestedHtml = BuildFolderHtml(folder.id, data); // Recursively build the nested structure
+//         if (nestedHtml) {
+//             html += "<ul class='menu'>"; // Start a new nested list
+//             html += nestedHtml;
+//             html += "</ul>"; // Close the nested list
+//         }
+//         html += "</li>";
+//     });
 
-    files.forEach(file => {
-        html += `<li data-type="file" class="highlight" data-id="${file.id}" id="f-${file.id}"><i class="bi bi-file-code"></i>${file.name}</li>`;
-    });
+//     files.forEach(file => {
+//         html += `<li data-type="file" class="highlight" data-id="${file.id}" id="f-${file.id}"><i class="bi bi-file-code"></i>${file.name}</li>`;
+//     });
 
-    return html;
-}
+//     return html;
+// }
 
-function BuildFolderStructure(data) {
-    let html = "<ul>";
-    html += BuildFolderHtml(null, data); // Start building from the root
-    html += "</ul>";
-    return html;
-}
+// function BuildFolderStructure(data) {
+//     let html = "<ul class='menu'>";
+//     html += BuildFolderHtml(null, data); // Start building from the root
+//     html += "</ul>";
+//     return html;
+// }
 
 function HighlightMenuItem(item) {
     // Remove highlight from previously highlighted items
